@@ -1,13 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body{
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0d1e38c2;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888888b4;
+  border-radius: 1rem;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #484848;
+}
+header {
+  background-color: #0a192f7e;
+  backdrop-filter: blur(50px);
+}
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #0a192f;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.img_about {
+  background-color: #303f52;
+  border-radius: 0.5rem;
+  position: relative;
+  filter: grayscale(1);
+  transition: 15s;
+}
+.img_about:hover {
+  filter: saturate(2)
+}
+.img_container {
+  width: 80%;
+  margin: auto;
+  border-radius: 0.75rem;
+  position: relative;
+}
+.img_container::before {
+  content: "";
+  border: 2px solid #64ffda;
+  position: absolute;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  top: 1.5rem;
+  left: 1.5rem;
+  transition: 0.2s;
+}
+.img_container:hover::before {
+  top: 1rem;
+  left: 1rem;
+}
+.contribute{
+  position: relative;
+  padding: 0 2rem;
+}
+.contribute::after{
+  content: "▹";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: x-large;
+  color: #64ffda;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.blur{
+  filter: blur(7px);
+}
+/* text */
+.textFont {
+  position: relative;
+  font-size: clamp(1.125rem, 3.5vw, 1.55rem);
+  font-weight: 600;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.textFont::before {
+  content: "02.";
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: #64ffda;
+  font-family: "Inconsolata";
+}
+.textFonts::before {
+  content: "01.";
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: #64ffda;
+  font-family: "Inconsolata";
+}
+.textFont::after {
+  content: "";
+  width: 300px;
+  height: 1px;
+  position: relative;
+  background-color: rgb(50, 50, 50);
+  margin-left: 10px;
+}
+.textProjects:before{
+  content: "03.";
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: #64ffda;
+  font-family: "Inconsolata";
 }

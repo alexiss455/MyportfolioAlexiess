@@ -1,88 +1,92 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Btn from "../components/btn";
 import Logo from "../components/logo";
+import Navitem from "../components/navitem";
 function header() {
   const [humbergerMenu, setHumberger] = useState(false);
   function headerClose() {
     setHumberger((prevState) => !prevState);
+    if (!humbergerMenu) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
   }
-  return (
-    <div>
-      <header className="text-white bg-Navy">
-        <nav className="max-w-screen-xl mx-auto px-6">
-          <div className=" h-24 flex items-center justify-between">
-            <div>
-              <Logo />
-            </div>
-            <div>
-              <div
-                className={`flex flex-row max-sm:fixed max-sm:bg-slate-800 max-sm:w-3/4 max-sm:h-full
-                  max-sm:justify-center duration-500 top-0 z-10 ${
-                    humbergerMenu ? "right-0" : "-right-full"
-                  }`}
-              >
-                <ul className=" font-sans Lightest-Slate text-md max-sm:text-lg flex gap-x-9 max-sm:flex-col justify-center items-center gap-y-10">
-                  <li>
-                    <a
-                      href=""
-                      className="flex gap-x-1 max-sm:flex-col items-center hover:text-Green duration-500 hover:scale-90"
-                    >
-                      <span className=" text-Green">01.</span>About
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      className="flex gap-x-1 max-sm:flex-col items-center hover:text-Green duration-500 hover:scale-90"
-                    >
-                      <span className=" text-Green">02.</span>Skills
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      className="flex gap-x-1 max-sm:flex-col items-center hover:text-Green duration-500 hover:scale-90"
-                    >
-                      <span className=" text-Green">03.</span>Projects
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      className="flex gap-x-1 max-sm:flex-col items-center hover:text-Green duration-500 hover:scale-90"
-                    >
-                      <span className=" text-Green">04.</span>Contact
-                    </a>
-                  </li>
-                  <Btn />
-                </ul>
-              </div>
+  const [show, setShow] = useState(true);
+  const [isTop, setIsTop] = useState(true);
+  const prevScrollY = useRef(0);
+  const controlNav = () => {
+    const currentScrollY = window.scrollY;
+    setShow(currentScrollY <= 96 || currentScrollY <= prevScrollY.current);
+    prevScrollY.current = currentScrollY;
+    setIsTop(currentScrollY === 0);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", controlNav);
+    return () => window.removeEventListener("scroll", controlNav);
+  }, []);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  useEffect(() => {
+    if (windowWidth >= 640) {
+      setHumberger(false);
+      document.body.classList.remove('no-scroll');
+    }
+  }, [windowWidth]);
 
+  return (
+    <header
+      className={`text-white fixed w-full z-10 duration-500 
+      ${isTop ? "shadow-none" : "shadow-lg"} 
+      ${show ? "top-0" : "-top-full"}`}
+    >
+      <nav className="max-w-screen-xl mx-auto max-xl:px-6">
+        <div className=" h-24 flex items-center justify-between">
+          <div>
+            <Logo />
+          </div>
+          <div>
+            <div
+              className={`max-sm:shadow-lg flex flex-row max-sm:fixed max-sm:bg-slate-800 max-sm:w-3/4 max-sm:min-h-screen
+                  max-sm:justify-center duration-500 top-0 
+                  ${ humbergerMenu ? "right-0" : "-right-full" }`}
+            >
+              <ul className="font-sans Lightest-Slate text-md max-sm:text-lg flex gap-x-8 max-sm:flex-col justify-center items-center gap-y-10">
+                <Navitem />
+                <Btn />
+              </ul>
+            </div>
+
+            <div
+              className=" flex flex-col gap-1 sm:hidden"
+              onClick={headerClose}
+            >
               <div
-                className=" flex flex-col gap-1 sm:hidden"
-                onClick={headerClose}
-              >
-                <div
-                  className={` z-20 w-6 h-0.5 bg-Green  duration-500 ${
-                    humbergerMenu ? "rotate-45 translate-y-1.5" : ""
-                  }`}
-                ></div>
-                <div
-                  className={`w-6 h-0.5  bg-Green rounded  duration-500 ${
-                    humbergerMenu ? "opacity-0" : ""
-                  }`}
-                ></div>
-                <div
-                  className={` z-20 w-6 h-0.5  bg-Green rounded  duration-500 ${
-                    humbergerMenu ? "-rotate-45 -translate-y-1.5" : ""
-                  }`}
-                ></div>
-              </div>
+                className={` w-6 h-0.5 bg-Green  duration-500 ${
+                  humbergerMenu ? "rotate-45 translate-y-1.5" : ""
+                }`}
+              ></div>
+              <div
+                className={`-z-10 w-6 h-0.5  bg-Green rounded  duration-500 ${
+                  humbergerMenu ? "opacity-0" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-6 h-0.5  bg-Green rounded  duration-500 ${
+                  humbergerMenu ? "-rotate-45 -translate-y-1.5" : ""
+                }`}
+              ></div>
             </div>
           </div>
-        </nav>
-      </header>
-    </div>
+        </div>
+      </nav>
+    </header>
   );
 }
 

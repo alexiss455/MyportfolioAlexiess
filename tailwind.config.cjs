@@ -13,7 +13,9 @@ module.exports = {
         'Slate': '#8892b0',
         'Lightest-Slate': '#ccd6f6',
         'White': '#e6f1ff',
-        'Green': '#64ffda'
+        'Green': '#64ffda',
+        'Gren-hover': '#64ffdb1e',
+        'GrayH': '#34343469'
       },
       fontFamily: {
         'sans': ['Inconsolata'],
@@ -25,6 +27,20 @@ module.exports = {
       },
       height: {
         'one': '1px'
+      },
+      lineHeight: {
+        'line2': '4.5rem',
+      },
+      minHeight:{
+
+        'height': '75vh'
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/img/PROJECT1.png')",
+        
+      },
+      opacity:{
+        'one':'.1'
       }
     },
   },
