@@ -42,7 +42,7 @@ function header() {
 
   return (
     <header
-      className={`text-white fixed w-full z-10 duration-500 
+      className={`text-white fixed w-full z-50 duration-500 
       ${isTop ? "shadow-none" : "shadow-lg"} 
       ${show ? "top-0" : "-top-full"}`}
     >
@@ -54,12 +54,14 @@ function header() {
           <div>
             <div
               className={`max-sm:shadow-lg flex flex-row max-sm:fixed max-sm:bg-slate-800 max-sm:w-3/4 max-sm:min-h-screen
-                  max-sm:justify-center duration-500 top-0 
+                  max-sm:justify-center duration-500 top-0 z-40
                   ${ humbergerMenu ? "right-0" : "-right-full" }`}
             >
               <ul className="font-sans Lightest-Slate text-md max-sm:text-lg flex gap-x-8 max-sm:flex-col justify-center items-center gap-y-10">
                 <Navitem />
-                <Btn />
+                <Btn>
+                  Resume
+                </Btn>
               </ul>
             </div>
 
@@ -68,7 +70,7 @@ function header() {
               onClick={headerClose}
             >
               <div
-                className={` w-6 h-0.5 bg-Green  duration-500 ${
+                className={` w-6 h-0.5 bg-Green  duration-500 z-50 ${
                   humbergerMenu ? "rotate-45 translate-y-1.5" : ""
                 }`}
               ></div>
@@ -78,7 +80,7 @@ function header() {
                 }`}
               ></div>
               <div
-                className={`w-6 h-0.5  bg-Green rounded  duration-500 ${
+                className={`w-6 h-0.5  bg-Green rounded  duration-500 z-50 ${
                   humbergerMenu ? "-rotate-45 -translate-y-1.5" : ""
                 }`}
               ></div>

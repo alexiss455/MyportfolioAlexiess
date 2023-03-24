@@ -3,7 +3,7 @@ import React from "react";
 export default function home() {
   return (
     <div className="flex flex-col items-start">
-      <h1 className=" text-Green font-sans mb-10">Hi, my name is</h1>
+      <h1 className=" text-Green font-sans mb-10 max-sm:mt-8">Hi, my name is</h1>
 
       <div className=" leading-line2">
         <h1

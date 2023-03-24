@@ -23,6 +23,7 @@ header {
   background-color: #0a192f7e;
   backdrop-filter: blur(50px);
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -119,4 +120,32 @@ body {
   font-size: 1.5rem;
   color: #64ffda;
   font-family: "Inconsolata";
+}
+.shdow{
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.36);
+-webkit-box-shadow: 0px 0px 7px 1px rgba(6, 17, 35, 0.36);
+-moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.36);
+  background-color: #0d1f3b;
+  border-radius: .25rem;
+}
+.anchor1::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+.textClamp{
+  font-size: clamp(1.5rem, 3.5vw, 1.55rem);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
 }

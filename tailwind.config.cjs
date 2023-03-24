@@ -41,7 +41,7 @@ module.exports = {
       },
       opacity:{
         'one':'.1'
-      }
+      },
     },
   },
   variants: {},

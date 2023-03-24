@@ -8,6 +8,8 @@ import Home from "./pages/home";
 import Aboutme from "./pages/aboutme";
 import Contribution from "./pages/Contribution";
 import Projects from "./pages/projects";
+import OtherProjects from "./pages/otherprojects";
+import Contact from "./pages/contact";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Header />
@@ -22,6 +24,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Aboutme />
         <Contribution />
         <Projects />
+        <OtherProjects />
+        <Contact />
+        
       </div>
     </div>
     </main>
