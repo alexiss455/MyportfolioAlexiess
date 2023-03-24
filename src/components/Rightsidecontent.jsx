@@ -1,4 +1,3 @@
-import React from "react";
 export default function rightsideContent(){
     return(
         <div className=" fixed bottom-1 right-14 max-sm:hidden">

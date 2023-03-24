@@ -10,6 +10,7 @@ import Contribution from "./pages/Contribution";
 import Projects from "./pages/projects";
 import OtherProjects from "./pages/otherprojects";
 import Contact from "./pages/contact";
+import Footer from "./pages/footer";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Header />
@@ -21,14 +22,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <div className="min-h-screen flex items-center">
           <Home />
         </div>
-        <Aboutme />
-        <Contribution />
-        <Projects />
-        <OtherProjects />
-        <Contact />
         
+        <Aboutme id="about"/>
+        <Contribution id="contribution"/>
+        <Projects id="porjects"/>
+        <OtherProjects id="about"/>
+        <Contact id="contact"/>
       </div>
     </div>
     </main>
+    <Footer />
   </React.StrictMode>
 );

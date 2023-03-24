@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Contribution() {
+export default function() {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index) => {
@@ -40,7 +40,7 @@ export default function Contribution() {
   ];
 
   return (
-    <div className="mt-60 ">
+    <div className="pt-60" id="contribution">
       <div>
         <h1 className="textFont text-Lightest-Slate mb-10">
           Projects that I Contribute

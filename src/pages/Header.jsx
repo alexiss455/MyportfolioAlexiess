@@ -59,9 +59,12 @@ function header() {
             >
               <ul className="font-sans Lightest-Slate text-md max-sm:text-lg flex gap-x-8 max-sm:flex-col justify-center items-center gap-y-10">
                 <Navitem />
+                <a href="/Alexiess_Manalastas_Resume-IT-1.pdf" target="_blank" rel="noopener noreferrer">
                 <Btn>
                   Resume
                 </Btn>
+                </a>
+               
               </ul>
             </div>
 

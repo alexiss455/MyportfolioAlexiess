@@ -1,15 +1,13 @@
-import React from "react";
-
 export default function projects() {
   return (
-    <div className=" my-60 relative text-White">
+    <div className=" py-60 relative text-White" id="projects">
       <h1 className="textFont textProjects text-Lightest-Slate mb-10">
         Projects I've Completed
       </h1>
 
       <div className="grid grid-cols-2 mt-8 max-md:grid-cols-1 relative">
         <div className=" relative m-auto max-md:absolute max-md:w-full max-md:h-full max-md:shadow-xl">
-          <a href="https://graphiscore.cyclic.app/" target='_blank rel="noopener noreferrer"'>
+          <a href="https://graphiscore.cyclic.app/" target='_blank' rel="noopener noreferrer">
             <div
               className="w-full h-full absolute top-0 
         left-0 z-10 rounded-md hover:bg-GrayH duration-300"

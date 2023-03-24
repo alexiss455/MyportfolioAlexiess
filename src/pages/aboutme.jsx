@@ -13,7 +13,7 @@ export default function () {
     "Rest API",
   ];
   return (
-    <div id="about">
+    <div id="about" className="pt-36">
       <div className="mb-8">
         <h1 className="textFont textFonts text-Lightest-Slate">About Me</h1>
       </div>
