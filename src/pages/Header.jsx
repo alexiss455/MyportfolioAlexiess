@@ -7,9 +7,9 @@ function header() {
   function headerClose() {
     setHumberger((prevState) => !prevState);
     if (!humbergerMenu) {
-      document.body.classList.add('no-scroll');
+      document.body.classList.add("no-scroll");
     } else {
-      document.body.classList.remove('no-scroll');
+      document.body.classList.remove("no-scroll");
     }
   }
   const [show, setShow] = useState(true);
@@ -28,18 +28,21 @@ function header() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   useEffect(() => {
     if (windowWidth >= 640) {
       setHumberger(false);
-      document.body.classList.remove('no-scroll');
+      document.body.classList.remove("no-scroll");
     }
   }, [windowWidth]);
-
+function closebar(){
+  setHumberger(false)
+  document.body.classList.remove("no-scroll");
+}
   return (
     <header
       className={`text-white fixed w-full z-50 duration-500 
@@ -54,17 +57,20 @@ function header() {
           <div>
             <div
               className={`max-sm:shadow-lg flex flex-row max-sm:fixed max-sm:bg-slate-800 max-sm:w-3/4 max-sm:min-h-screen
-                  max-sm:justify-center duration-500 top-0 z-40
-                  ${ humbergerMenu ? "right-0" : "-right-full" }`}
+                  max-sm:justify-center duration-300 top-0 z-40
+                  ${humbergerMenu ? "right-0" : "-right-full"}`}
             >
               <ul className="font-sans Lightest-Slate text-md max-sm:text-lg flex gap-x-8 max-sm:flex-col justify-center items-center gap-y-10">
-                <Navitem />
-                <a href="/Alexiess_Manalastas_Resume-IT-1.pdf" target="_blank" rel="noopener noreferrer">
-                <Btn>
-                  Resume
-                </Btn>
+                <Navitem 
+                  onClick={closebar}
+                />
+                <a
+                  href="/Alexiess_Manalastas_Resume-IT-1.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Btn>Resume</Btn>
                 </a>
-               
               </ul>
             </div>
 

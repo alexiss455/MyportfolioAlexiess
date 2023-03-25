@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -138,7 +139,6 @@ body {
   left: 0px;
   z-index: 0;
 }
-
 .textClamp{
   font-size: clamp(1.5rem, 3.5vw, 1.55rem);
 }
@@ -148,4 +148,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: #fff !important;
+}
+.active{
+  color: #64ffda;
 }

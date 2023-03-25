@@ -27,8 +27,9 @@ export default function contact() {
         }
       );
   };
+  
   return (
-    <div className="py-72" id="contact">
+    <div className="pb-60 pt-44" id="contact">
     <ToastContainer />
       <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto">
         <div className=" flex flex-col gap-y-4 text-Lightest-Slate ">

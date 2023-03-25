@@ -1,6 +1,6 @@
-export default function otherProjects() {
+export default function() {
   return (
-    <div>
+    <div className="pt-56">
       <h1 className="textClamp text-Lightest-Slate font-bold flex justify-center items-center flex-col  gap-y-4">
         Other Projects
         <a className="text-Green text-sm font-thin">View the archive</a>

@@ -1,6 +1,8 @@
+
+import Otherprojects from "./otherprojects";
 export default function projects() {
   return (
-    <div className=" py-60 relative text-White" id="projects">
+    <div className=" pt-60 relative text-White" id="projects">
       <h1 className="textFont textProjects text-Lightest-Slate mb-10">
         Projects I've Completed
       </h1>
@@ -54,6 +56,7 @@ export default function projects() {
           </div>
         </div>
       </div>
+      <Otherprojects />
     </div>
   );
 }
