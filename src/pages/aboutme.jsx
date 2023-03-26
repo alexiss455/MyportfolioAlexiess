@@ -15,9 +15,9 @@ export default function () {
   return (
     <div
       id="about"
-      className="pt-36"
+      className="sm:pt-36 max-sm:pt-20"
       data-aos="fade-up"
-      data-aos-anchor-placement="bottom-bottom">
+      >
     
       <div className="mb-8">
         <h1 className="textFont textFonts text-Lightest-Slate">About Me</h1>
