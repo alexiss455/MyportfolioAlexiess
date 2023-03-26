@@ -43,6 +43,19 @@ function closebar(){
   setHumberger(false)
   document.body.classList.remove("no-scroll");
 }
+
+
+const [navanimate, setLetterClass] = useState("navanimate");
+useEffect(() => {
+  const timeoutId = setTimeout(() => {
+    setLetterClass("");
+  }, 2000);
+  return () => {
+    clearTimeout(timeoutId);
+  };
+}, []);
+
+
   return (
     <header
       className={`text-white fixed w-full z-50 duration-500 
@@ -69,7 +82,7 @@ function closebar(){
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Btn>Resume</Btn>
+                  <Btn className={`${navanimate} setnav4`}>Resume</Btn>
                 </a>
               </ul>
             </div>

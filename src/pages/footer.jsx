@@ -3,7 +3,7 @@ export default function footer(){
     return(
         <div className="text-center ">
         <LeftsideContent/>
-            <footer className="text-Lightest-Slate h-20  max-sm:h-24 flex items-center justify-center flex-col">
+            <footer className="text-Lightest-Slate h-20  max-sm:h-32 flex items-center justify-center flex-col">
                 <div className={` flex flex-row gap-1 text-2xl items-center justify-center text-Lightest-Slate sm:hidden`}>
                 <a target='_blank' href="https://github.com/alexiss455"><i className=" hover:text-Green ri-github-line"></i> </a>
                 <a target='_blank' href="https://www.linkedin.com/in/alexiess-o-manalastas-566326243/"><i className=" hover:text-Green ri-linkedin-line"></i></a>

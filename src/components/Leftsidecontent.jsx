@@ -1,7 +1,7 @@
 
 const leftsideContent = () =>{
     return(
-        <div className={` fixed bottom-1 left-14 max-sm:hidden`}>
+        <div className={` fixed bottom-1 left-14 max-sm:hidden navanimate setnav5`}>
             <div>
                 <ul className={` flex flex-col gap-3 text-2xl items-center justify-center text-Lightest-Slate`}>
                 <li className=" hover:-translate-y-2 duration-500"><a target='_blank' href="https://github.com/alexiss455"><i className=" hover:text-Green ri-github-line"></i> </a></li>

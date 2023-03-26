@@ -9,7 +9,7 @@ export default function() {
 
       <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4 py-6">
       
-        <div className="shdow hover:-translate-y-3 duration-300 relative">
+        <div data-aos="zoom-in" className="shdow hover:-translate-y-3 duration-300 relative">
           <div className="my-4 mx-6">
             <div className="flex justify-between items-center">
               <i className="ri-folder-open-line text-Green text-3xl"></i>
@@ -41,7 +41,7 @@ export default function() {
 
 
 
-        <div className="shdow hover:-translate-y-3 duration-300 relative">
+        <div data-aos="zoom-in" className="shdow hover:-translate-y-3 duration-300 relative">
           <div className="my-4 mx-6">
             <div className="flex justify-between items-center">
               <i className="ri-folder-open-line text-Green text-3xl"></i>
@@ -73,7 +73,7 @@ export default function() {
 
 
 
-        <div className="shdow hover:-translate-y-3 duration-300 relative">
+        <div data-aos="zoom-in" className="shdow hover:-translate-y-3 duration-300 relative">
           <div className="my-4 mx-6">
             <div className="flex justify-between items-center">
               <i className="ri-folder-open-line text-Green text-3xl"></i>
@@ -104,7 +104,7 @@ export default function() {
         </div>
 
         
-        <div className="shdow hover:-translate-y-3 duration-300 relative">
+        <div data-aos="zoom-in" className="shdow hover:-translate-y-3 duration-300 relative">
           <div className="my-4 mx-6">
             <div className="flex justify-between items-center">
               <i className="ri-folder-open-line text-Green text-3xl"></i>
@@ -136,7 +136,7 @@ export default function() {
 
 
 
-        <div className="shdow hover:-translate-y-3 duration-300 relative">
+        <div data-aos="zoom-in" className="shdow hover:-translate-y-3 duration-300 relative">
           <div className="my-4 mx-6">
             <div className="flex justify-between items-center">
               <i className="ri-folder-open-line text-Green text-3xl"></i>
@@ -168,7 +168,7 @@ export default function() {
 
 
         
-        <div className="shdow hover:-translate-y-3 duration-300 relative">
+        <div data-aos="zoom-in" className="shdow hover:-translate-y-3 duration-300 relative">
           <div className="my-4 mx-6">
             <div className="flex justify-between items-center">
               <i className="ri-folder-open-line text-Green text-3xl"></i>

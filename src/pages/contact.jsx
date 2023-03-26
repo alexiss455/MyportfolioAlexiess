@@ -27,9 +27,8 @@ export default function contact() {
         }
       );
   };
-  
   return (
-    <div className="pb-60 pt-44" id="contact">
+    <div className="pb-60 pt-44" id="contact" data-aos="fade-up"  data-aos-anchor-placement="top-center">
     <ToastContainer />
       <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto">
         <div className=" flex flex-col gap-y-4 text-Lightest-Slate ">

@@ -10,6 +10,10 @@ import Contribution from "./pages/Contribution";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Footer from "./pages/footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Header />
@@ -21,12 +25,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <div className="min-h-screen flex items-center">
             <Home />
           </div>
-
           <Aboutme />
           <Contribution />
           <Projects />
           <Contact />
-          
         </div>
       </div>
     </main>

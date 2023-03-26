@@ -2,13 +2,14 @@
 import Otherprojects from "./otherprojects";
 export default function projects() {
   return (
-    <div className=" pt-60 relative text-White" id="projects">
+    <div className=" pt-60 relative text-White" id="projects" data-aos="fade-up">
       <h1 className="textFont textProjects text-Lightest-Slate mb-10">
         Projects I've Completed
       </h1>
 
       <div className="grid grid-cols-2 mt-8 max-md:grid-cols-1 relative">
-        <div className=" relative m-auto max-md:absolute max-md:w-full max-md:h-full max-md:shadow-xl">
+      
+        <div data-aos="fade-left" className="relative m-auto max-md:absolute max-md:w-full max-md:h-full max-md:shadow-xl">
           <a href="https://graphiscore.cyclic.app/" target='_blank' rel="noopener noreferrer">
             <div
               className="w-full h-full absolute top-0 
@@ -22,7 +23,7 @@ export default function projects() {
           </a>
         </div>
 
-        <div className="relative flex items-start flex-col justify-center order-first max-md:p-6 z-20">
+        <div data-aos="fade-right" className="relative flex items-start flex-col justify-center order-first max-md:p-6 z-20">
           <p className=" text-Green text-md">Featured Project</p>
           <a href="https://graphiscore.cyclic.app" target='_blank' rel="noopener noreferrer">
           <p className=" text-3xl text-Slate font-bold whitespace-nowrap  hover:text-Green duration-300">

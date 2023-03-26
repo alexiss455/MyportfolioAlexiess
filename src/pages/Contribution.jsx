@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function() {
+export default function () {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index) => {
@@ -40,7 +40,7 @@ export default function() {
   ];
 
   return (
-    <div className="pt-60" id="contribution">
+    <div className="pt-60" id="contribution" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       <div>
         <h1 className="textFont text-Lightest-Slate mb-10">
           Projects that I Contribute

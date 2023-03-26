@@ -24,14 +24,12 @@ header {
   background-color: #0a192f7e;
   backdrop-filter: blur(50px);
 }
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #0a192f;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
 }
 .img_about {
   background-color: #303f52;
@@ -151,4 +149,35 @@ input:-webkit-autofill:active {
 }
 .active{
   color: #64ffda;
+}
+.webdev{
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.7s;
+}
+.navanimate{
+  opacity: 0;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.setnav0{
+  animation-delay: .0s;
+}
+.setnav1{
+  animation-delay: .3s;
+}
+.setnav2{
+  animation-delay: .6s;
+}
+.setnav3{
+  animation-delay: .9s;
+}
+.setnav4{
+  animation-delay: 1.2s;
+}
+.setnav5{
+  animation-delay: 2.9s;
 }

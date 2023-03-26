@@ -4,16 +4,16 @@ import "animate.css";
 
 import { useState, useEffect } from "react";
 export default function home() {
-  const myName = ["A", "l", "e", "x", "i", "e", "s", "s"];
+  const myName = ["A", "l", "e", "x", "i", "e", "s", "s", ""];
   const myLastname = ["M", "a", "n", "a", "l", "a", "s", "t", "a", "s"];
   const i = ["I", ""];
   const c = ["craft", ""];
   const d = ["digital", ""];
   const s = ["solutions", ""];
   const f = ["for", ""];
-  const t = ["the",""];
+  const t = ["the", ""];
   const w = ["web"];
-
+  const nameis = ["Hi, my name is"]
   const [letterClass, setLetterClass] = useState("text-animate");
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -25,14 +25,17 @@ export default function home() {
   }, []);
 
   return (
-    <div className="flex flex-col items-start">
-      <h1 className=" text-Green font-sans mb-10 max-sm:mt-8">
-        Hi, my name is
+    <div className="flex flex-col items-start" id="home">
+      <h1 className=" text-Green font-sans mb-10 max-sm:pt-24 text-lg ">
+      <AnimatedLetters
+            letterClass={letterClass}
+            strArray={nameis}
+            idx={2}
+          />
       </h1>
-
       <div className=" leading-line2">
         <div
-          className=" text-Lightest-Slate font-bold max-sm:font-black max-sm:leading-10 flex flex-col"
+          className=" text-Lightest-Slate font-bold max-sm:font-black max-sm:leading-10 flex flex-row flex-wrap"
           style={{ fontSize: "clamp(40px, 8vw, 80px)" }}
         >
           <AnimatedLetters
@@ -40,6 +43,7 @@ export default function home() {
             strArray={myName}
             idx={0}
           />
+
           <AnimatedLetters
             letterClass={letterClass}
             strArray={myLastname}
@@ -59,11 +63,9 @@ export default function home() {
           <AnimatedLetters letterClass={letterClass} strArray={w} idx={26} />
         </h1>
       </div>
-      <p className=" text-Slate mt-10 leading-2.5">
+      <p className=" text-Slate mt-10 leading-2.5 webdev max-w-xl">
         I am a Web developer with a specialization in creating intuitive digital
-        <br />
         experiences. My work is focused on developing interfaces that prioritize
-        <br />
         accessibility and usability for all users, regardless of their abilities
         or disabilities.
       </p>

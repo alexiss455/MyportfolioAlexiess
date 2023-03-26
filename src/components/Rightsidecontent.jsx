@@ -1,6 +1,6 @@
 export default function rightsideContent(){
     return(
-        <div className=" fixed bottom-1 right-14 max-sm:hidden">
+        <div className=" fixed bottom-1 right-14 max-sm:hidden navanimate setnav5">
             <div>
                 <ul className=" flex flex-col gap-4 text-2xl items-center text-Lightest-Slate">
                 <a  href="mailto:alexissmanalastas@gmail.com" className= "hover:-translate-y-2 hover:text-Green duration-500 text-sm font-sans cursor-pointer align-text-top" style={{writingMode: "vertical-rl"}}>alexissmanalastas@gmail.com</a>
