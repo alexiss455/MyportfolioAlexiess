@@ -68,7 +68,7 @@ export default function () {
               href={tabs[activeTab].link}
               target="_blank"
               rel="noopener noreferrer"
-            >
+            > 
               <p className="text-Green text-xl font-medium">
                 {tabs[activeTab].title}
               </p>

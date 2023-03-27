@@ -243,7 +243,7 @@ export default function projects() {
             className="relative m-auto max-md:absolute max-md:w-full max-md:h-full max-md:shadow-xl"
           >
             <a
-              href="https://alexiss455.github.io/Coffee/"
+              href="https://alexiess.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -264,7 +264,7 @@ export default function projects() {
           >
             <p className=" text-Green text-md">Featured Project</p>
             <a
-              href="https://alexiss455.github.io/Coffee/"
+              href="https://alexiess.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -294,7 +294,7 @@ export default function projects() {
               <a
                 className="hover:text-Green active:scale-90 duration-500"
                 title="Repository"
-                href="https://github.com/alexiss455/Coffee"
+                href="https://github.com/alexiss455/MyportfolioAlexiess"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -302,8 +302,8 @@ export default function projects() {
               </a>
               <a
                 className="hover:text-Green active:scale-90 duration-500"
-                title="Coffee"
-                href="https://alexiss455.github.io/Coffee/"
+                title="Portfolio"
+                href="https://alexiess.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -193,8 +193,12 @@ export default function () {
               </a>
             </h1>
             <p className=" text-Slate text-sm mt-2">
-              Building a custom mutilside compatible wordpress plugin to build
-              global research with algolia
+              This website is an interactive virtual drum set that allows users
+              to play and create drum beats by clicking on different virtual
+              drum components such as bass drum, snare drum, hi-hat, and
+              cymbals. Each drum component produces a different sound and can be
+              played individually or in combination with other drums to create a
+              complete drum beat.
             </p>
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
@@ -241,8 +245,10 @@ export default function () {
               </a>
             </h1>
             <p className=" text-Slate text-sm mt-2">
-              Building a custom mutilside compatible wordpress plugin to build
-              global research with algolia
+              The website also incorporates various Bootstrap components,
+              including a navbar, which provides navigation links to different
+              sections of the website, cards, which display images and
+              information in an organized manner.
             </p>
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
@@ -288,8 +294,11 @@ export default function () {
               </a>
             </h1>
             <p className=" text-Slate text-sm mt-2">
-              Building a custom mutilside compatible wordpress plugin to build
-              global research with algolia
+              Overall, the website appears to be focused on user authentication
+              and secure information submission. log in and register using their
+              Google account credentials via Google Auth. Once a user is
+              authenticated, the website provides access to a feature called
+              "Submit Secret".
             </p>
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
