@@ -66,8 +66,7 @@ export default function home() {
       <p className=" text-Slate mt-10 leading-2.5 webdev max-w-xl">
         I am a Web developer with a specialization in creating intuitive digital
         experiences. My work is focused on developing interfaces that prioritize
-        accessibility and usability for all users, regardless of their abilities
-        or disabilities.
+        accessibility and usability for all users.
       </p>
     </div>
   );

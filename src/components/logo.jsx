@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-
+import { Link } from "react-scroll";
 export default function Logo() {
   const points = "100,10 190,50 190,150 100,190 10,150 10,50";
   const scale = 0.3;
@@ -11,10 +11,9 @@ export default function Logo() {
       return `${x * scale},${y * scale}`;
     })
     .join(" ");
-
   const logoRef = useRef(null);
   useEffect(() => {
-    gsap.to(logoRef.current, { scale: 1, rotate: 360,  duration: 2 });
+    gsap.to(logoRef.current, { scale: 1.2, duration: 3 });
   }, []);
   function handleMouseOver() {
     const polygon = logoRef.current.querySelector("polygon");
@@ -25,12 +24,13 @@ export default function Logo() {
     polygon.style.fill = "#0a192f";
   }
   return (
-   
+   <a href="#">
       <svg
-      style={{scale: '0'}}
+        style={{ scale: "0" }}
         width="60"
         height="60"
-        ref={logoRef}
+
+        ref={logoRef} 
         onMouseOver={handleMouseOver}
         onMouseLeave={handleMouseLeave}
       >
@@ -56,6 +56,6 @@ export default function Logo() {
           A
         </text>
       </svg>
-  
+    </a>
   );
 }

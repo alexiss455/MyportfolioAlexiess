@@ -10,15 +10,19 @@ export default function () {
   const tabs = [
     {
       title: "GrapiScore",
-      content: `Write modern, performant, maintainable code for a
-         diverse array of client and internal projects. Work with a variety
-          of different languages, platforms, frameworks, and content management
-           systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress
-           , Prismic, and Netlify. Communicate with multi-disciplinary teams of engineers
-           , designers, producers, and clients on a daily basis.`,
+      link: "https://graphiscore.cyclic.app/",
+      content: `As a frontend developer, I contribute
+       to the GraphiScore website by designing and implementing
+        the user interface and user experience of the platform.
+         This includes creating wireframes, mockups, and prototypes of
+          the website, as well as implementing the frontend using HTML, CSS, and JavaScript. GraphiScore was built using,`,
+      content3: `Front-end: HTML, CSS, JavaScript, AJAX, EJS`,
+      content4: `Back-end: Express, Node.js`,
+      content5: `Database: MongoDB Atlas`,
     },
     {
       title: "POS",
+      link: "https://youtube.com",
       content: `Write modern, performant, maintainable code for a diverse array
          of client and internal projects. Work with a variety of different 
          languages, platforms, frameworks, and content management systems such 
@@ -28,21 +32,17 @@ export default function () {
       content2: `languages, platforms, frameworks, and content management systems such 
       as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic,`,
     },
-    {
-      title: "Coffee",
-      content: `Write modern, performant, maintainable code for a diverse array
-           designers, producers, and clients on a daily basis.`,
-      content2: `languages, platforms, frameworks, and content management systems such 
-      as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic,`,
-      content3: `languages, platforms, frameworks, and content management systems such 
-      as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic,`,
-    },
   ];
 
   return (
-    <div className="pt-60" id="contribution" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <div
+      className="pt-60"
+      id="contribution"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+    >
       <div>
-        <h1 className="textFont text-Lightest-Slate mb-10">
+        <h1 className="textFont text-Lightest-Slate mb-10 ">
           Projects that I Contribute
         </h1>
         <div className="flex flex-row gap-4 max-sm:flex-col">
@@ -64,16 +64,28 @@ export default function () {
             ))}
           </div>
           <div className="text-Slate text-sm">
-            <p className="text-Green text-xl font-medium">
-              {tabs[activeTab].title}
-            </p>
-            <p className="mt-4 contribute">{tabs[activeTab].content}</p>
-            {tabs[activeTab].content2 ? (
-              <p className="mt-4 contribute">{tabs[activeTab].content2}</p>
-            ) : null}
-            {tabs[activeTab].content3 ? (
-              <p className="mt-4 contribute">{tabs[activeTab].content3}</p>
-            ) : null}
+            <a
+              href={tabs[activeTab].link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="text-Green text-xl font-medium">
+                {tabs[activeTab].title}
+              </p>
+              <p className="mt-4 contribute">{tabs[activeTab].content}</p>
+              {tabs[activeTab].content2 ? (
+                <p className="mt-4 contribute">{tabs[activeTab].content2}</p>
+              ) : null}
+              {tabs[activeTab].content3 ? (
+                <p className="mt-4 contribute">{tabs[activeTab].content3}</p>
+              ) : null}
+              {tabs[activeTab].content4 ? (
+                <p className="mt-4 contribute">{tabs[activeTab].content4}</p>
+              ) : null}
+              {tabs[activeTab].content5 ? (
+                <p className="mt-4 contribute">{tabs[activeTab].content5}</p>
+              ) : null}
+            </a>
           </div>
         </div>
       </div>

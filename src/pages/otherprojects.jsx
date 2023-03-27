@@ -6,7 +6,6 @@ export default function () {
       </h1>
 
       <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4 py-6">
-
         <div
           data-aos="zoom-in"
           className="shdow hover:-translate-y-3 duration-300 relative py-4 px-6 flex flex-col justify-between"
@@ -51,10 +50,10 @@ export default function () {
             </p>
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
-              <p>React</p>
-              <p>CSS</p>
-              <p>MongoDB</p>
-            </ul>
+            <p>React</p>
+            <p>CSS</p>
+            <p>MongoDB</p>
+          </ul>
         </div>
 
         <div
@@ -98,15 +97,13 @@ export default function () {
               Simon. The goal of the game is to repeat a sequence of flashing
               colors that the computer generates.
             </p>
-            
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </ul>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </ul>
         </div>
-
 
         <div
           data-aos="zoom-in"
@@ -145,18 +142,20 @@ export default function () {
               </a>
             </h1>
             <p className=" text-Slate text-sm mt-2">
-              Building a custom mutilside compatible wordpress plugin to build
-              global research with algolia
+              The website has a modern and stylish design, featuring a
+              full-screen background image of a dog with a call-to-action button
+              to download the Tindog app. The navigation menu is simple and easy
+              to use, with links to various sections of the website including
+              features, testimonials, and pricing.
             </p>
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
-              <p>HTML</p>
-              <p>Bootstrap</p>
-              <p>CSS</p>
-            </ul>
+            <p>HTML</p>
+            <p>Bootstrap</p>
+            <p>CSS</p>
+          </ul>
         </div>
 
-        
         <div
           data-aos="zoom-in"
           className="shdow hover:-translate-y-3 duration-300 relative py-4 px-6 flex flex-col justify-between"
@@ -199,14 +198,11 @@ export default function () {
             </p>
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </ul>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </ul>
         </div>
-
-
-
 
         <div
           data-aos="zoom-in"
@@ -250,14 +246,10 @@ export default function () {
             </p>
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
-              <p>HTML</p>
-              <p>Bootsrap</p>
-            </ul>
+            <p>HTML</p>
+            <p>Bootsrap</p>
+          </ul>
         </div>
-
-
-
-
 
         <div
           data-aos="zoom-in"
@@ -292,7 +284,7 @@ export default function () {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Secrets Website 
+                Secrets Website
               </a>
             </h1>
             <p className=" text-Slate text-sm mt-2">
@@ -301,16 +293,14 @@ export default function () {
             </p>
           </div>
           <ul className="font-sans flex flex-row gap-x-2 text-sm mt-4 text-gray-400">
-              <p>EJS</p>
-              <p>CSS</p>
-              <p>NodeJs</p>
-              <p>MongoDB</p>
-              <p>Express</p>
-            </ul>
+            <p>EJS</p>
+            <p>CSS</p>
+            <p>NodeJs</p>
+            <p>MongoDB</p>
+            <p>Express</p>
+          </ul>
         </div>
-
-
-    </div>
+      </div>
     </div>
   );
 }

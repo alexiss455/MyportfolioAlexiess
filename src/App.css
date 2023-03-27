@@ -23,6 +23,9 @@
 #root{
   overflow: hidden;
 }
+html{
+  scroll-behavior: smooth;
+}
 header {
   background-color: #0a192f7e;
   backdrop-filter: blur(50px);
@@ -140,6 +143,7 @@ body {
 .textClamp{
   font-size: clamp(1.5rem, 3.5vw, 1.55rem);
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -150,6 +154,7 @@ input:-webkit-autofill:active {
 .active{
   color: #64ffda;
 }
+
 .webdev{
   opacity: 0;
   animation-name: bounceIn;

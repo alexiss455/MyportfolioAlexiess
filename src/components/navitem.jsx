@@ -27,9 +27,7 @@ export default function NavItem({ onClick }) {
       <span className="text-Green">{`0${index + 1}.`}</span>
       <Link
         spy={true}
-        smooth={true}
         offset={-50}
-        duration={700}
         to={url}
         onClick={onClick}
       >

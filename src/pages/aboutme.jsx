@@ -13,25 +13,21 @@ export default function () {
     "Rest API",
   ];
   return (
-    <div
-      id="about"
-      className="sm:pt-36 max-sm:pt-20"
-      data-aos="fade-up"
-      >
-    
+    <div id="about" className="sm:pt-36 max-sm:pt-20" data-aos="fade-up">
       <div className="mb-8">
         <h1 className="textFont textFonts text-Lightest-Slate">About Me</h1>
       </div>
       <div className="grid grid-cols-2 max-md:grid-cols-1 gap-y-16 text-Slate">
-        <div data-aos="fade-left" >
+        <div data-aos="fade-left">
           <p>
-            Hello! My name is Alexiess and I enjoy creating things that live on
-            the internet. My interest in web development started back in when I
-            was gradute in college. I'm mdecided to join a bootcamp in Udemy
-            course is Web Development Bootcamp way back november 2022.
+            Hi there! I'm Alexiess, and I have a passion for crafting digital
+            experiences that thrive online. My fascination with web development
+            began during my college years, and since then, I've taken on the
+            challenge of mastering the web development by enrolling in a rigorous Web
+            Development Bootcamp on Udemy in November 2022.
           </p>
           <p className=" mt-6">
-            Here are a few technologies I’ve been working with recently:
+          During the bootcamp, I've been learning about the following technologies:
           </p>
           <div className=" grid grid-cols-3 max-md:grid-cols-2 mt-4 font-sans font-semibold">
             {technologies.map((tech) => (
