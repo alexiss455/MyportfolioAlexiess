@@ -4,9 +4,8 @@ import Logo from "../components/logo";
 import Navitem from "../components/navitem";
 import Main from "../Maincomponents/main";
 import Laoding from "../components/laoding";
+import Burger from "../components/burger";
 function header() {
-
-
   const [humbergerMenu, setHumberger] = useState(false);
   function headerClose() {
     setHumberger((prevState) => !prevState);
@@ -27,7 +26,6 @@ function header() {
     setIsTop(currentScrollY === 0);
   };
 
-  
   useEffect(() => {
     window.addEventListener("scroll", controlNav);
     return () => window.removeEventListener("scroll", controlNav);
@@ -57,7 +55,7 @@ function header() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLetterClass("");
-    }, 2000);
+    }, 5000);
     return () => {
       clearTimeout(timeoutId);
     };
@@ -93,39 +91,29 @@ function header() {
                   max-sm:justify-center duration-300 top-0 z-40
                   ${humbergerMenu ? "right-0" : "-right-full"}`}
                   >
-                    <ul className="font-sans Lightest-Slate text-md max-sm:text-lg flex gap-x-8 max-sm:flex-col justify-center items-center gap-y-10">
+                    <ul className="font-sans Lightest-Slate text-md max-sm:text-lg flex gap-x-5 max-sm:flex-col justify-center items-center gap-y-10">
                       <Navitem onClick={closebar} />
-
                       <a
                         href="/Alexiess_Manalastas_Resume-IT-1.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Btn className={`${navanimate} setnav4`}>Resume</Btn>
+                        <Btn className={`${navanimate} setnav4 flex justify-center items-center`}>Resume</Btn>
                       </a>
                     </ul>
                   </div>
-
-                  <div
-                    className=" flex flex-col gap-1 sm:hidden"
-                    onClick={headerClose}
-                  >
-                    <div
-                      className={` w-6 h-0.5 bg-Green  duration-500 z-50 ${
-                        humbergerMenu ? "rotate-45 translate-y-1.5" : ""
-                      }`}
-                    ></div>
-                    <div
-                      className={`-z-10 w-6 h-0.5  bg-Green rounded  duration-500 ${
-                        humbergerMenu ? "opacity-0" : ""
-                      }`}
-                    ></div>
-                    <div
-                      className={`w-6 h-0.5  bg-Green rounded  duration-500 z-50 ${
-                        humbergerMenu ? "-rotate-45 -translate-y-1.5" : ""
-                      }`}
-                    ></div>
-                  </div>
+                  <Burger
+                    headerClose={headerClose}
+                    top={
+                      humbergerMenu === true ? "rotate-45 translate-y-1.5 " : ""
+                    }
+                    center={humbergerMenu === true ? "opacity-0" : ""}
+                    bottom={
+                      humbergerMenu === true
+                        ? "-rotate-45 -translate-y-1.5 "
+                        : ""
+                    }
+                  />
                 </div>
               </div>
             </nav>
@@ -136,5 +124,4 @@ function header() {
     </>
   );
 }
-
 export default header;

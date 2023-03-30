@@ -50,12 +50,14 @@ export default function () {
             {tabs.map((tab, index) => (
               <button
                 key={index}
-                className={`max-sm:text-center max-sm:w-full p-4 max-sm:border-l-0 max-sm:border-b-2 
-                text-start duration-200 hover:bg-Gren-hover
+                className={`max-sm:text-center max-sm:w-full p-4
+                text-start duration-200 hover:bg-Gren-hover relative
                 ${
                   activeTab === index
-                    ? "text-Green border-l-4 max-sm:border-b-4 border-Green"
-                    : "border-l-2 border-l-slate-600"
+                    ? `text-Green  after:w-[2px]  after:h-full  after:bg-Green  after:absolute  after:left-0  after:bottom-0 max-sm:after:w-full max-sm:after:h-[2px]
+                    `
+                    : `after:w-[2px] after:h-full after:bg-slate-400 after:absolute after:left-0 after:bottom-0 max-sm:after:w-ful max-sm:after:h-[2px]
+                    `
                 }`}
                 onClick={() => handleTabClick(index)}
               >
@@ -68,7 +70,7 @@ export default function () {
               href={tabs[activeTab].link}
               target="_blank"
               rel="noopener noreferrer"
-            > 
+            >
               <p className="text-Green text-xl font-medium">
                 {tabs[activeTab].title}
               </p>

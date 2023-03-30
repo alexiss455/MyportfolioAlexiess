@@ -1,5 +1,5 @@
 import React from "react";
-
+import porfile from "../img/alexiesspic.png"
 export default function () {
   const technologies = [
     "JavaScript",
@@ -44,7 +44,7 @@ export default function () {
           <div className="img_container">
             <img
               className="img_about"
-              src="/img/alexiesspic.png"
+              src={porfile}
               alt="profile_pic"
             />
           </div>

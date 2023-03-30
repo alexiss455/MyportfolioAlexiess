@@ -1,3 +1,9 @@
+import p1 from "../img/PROJECT1.png";
+import p2 from "../img/coffeewebsite.png";
+import p3 from "../img/shushiwebsite.png";
+import p4 from "../img/myportfolio.png";
+import p5 from "../img/spaceweb.png";
+
 import Otherprojects from "./otherprojects";
 export default function projects() {
   return (
@@ -26,7 +32,7 @@ export default function projects() {
               ></div>
               <img
                 className="relative object-cover object-center w-full max-md:h-full max-md:opacity-one rounded-md max-md:grayscale"
-                src="/img/PROJECT1.png"
+                src={p1}
               />
             </a>
           </div>
@@ -101,7 +107,7 @@ export default function projects() {
               ></div>
               <img
                 className="relative object-cover object-center w-full max-md:h-full max-md:opacity-one rounded-md max-md:grayscale"
-                src="/img/coffeewebsite.png"
+                src={p2}
               />
             </a>
           </div>
@@ -178,7 +184,7 @@ export default function projects() {
 
               <img
                 className="relative object-cover object-center w-full max-md:h-full max-md:opacity-one rounded-md max-md:grayscale"
-                src="/img/shushiwebsite.png"
+                src={p3}
               />
             </a>
           </div>
@@ -253,7 +259,7 @@ export default function projects() {
               ></div>
               <img
                 className=" shdow relative object-cover object-center w-full max-md:h-full max-md:opacity-one rounded-md max-md:grayscale"
-                src="/img/myportfolio.png"
+                src={p4}
               />
             </a>
           </div>
@@ -304,6 +310,80 @@ export default function projects() {
                 className="hover:text-Green active:scale-90 duration-500"
                 title="Portfolio"
                 href="https://alexiess.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 mt-8 max-md:grid-cols-1 relative">
+          <div
+            data-aos="fade-left"
+            className="relative m-auto max-md:absolute max-md:w-full max-md:h-full max-md:shadow-xl"
+          >
+            <a
+              href="https://space-frontend-challenge.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                className="w-full h-full absolute top-0 
+      left-0 z-10 rounded-md hover:bg-GrayH duration-300"
+              ></div>
+
+              <img
+                className="relative object-cover object-center w-full max-md:h-full max-md:opacity-one rounded-md max-md:grayscale"
+                src={p5}
+              />
+            </a>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            className="relative flex items-start flex-col justify-center order-first max-md:p-6 z-20"
+          >
+            <p className=" text-Green text-md">Featured Project</p>
+            <a
+              href="https://space-frontend-challenge.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className=" text-3xl text-Lightest-Slate font-bold whitespace-nowrap  hover:text-Green duration-300">
+                Space tourism
+              </p>
+            </a>
+
+            <div
+              className=" max-md:bg-transparent rounded-md -mr-20 max-md:px-0
+         max-md:mr-0 bg-Light-Navy p-4 py-8 mt-4 text-left z-20 max-md:z-0"
+            >
+              <p>
+                This website is a well-designed and functional web application that
+                incorporates popular web development technologies and a visually
+                appealing theme. By using React Router and Tailwind CSS.
+              </p>
+            </div>
+            <div className="flex gap-4 font-sans mt-4">
+              <p>REACTJS</p>
+              <p>TAILWIND CSS</p>
+            </div>
+            <div className="text-3xl flex flex-row gap-2 mt-4">
+              <a
+                className="hover:text-Green active:scale-90 duration-500"
+                title="Repository"
+                href="https://github.com/alexiss455/space_frontend_challenge"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="ri-github-line"></i>
+              </a>
+              <a
+                className="hover:text-Green active:scale-90 duration-500"
+                title="Shushi"
+                href="https://space-frontend-challenge.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 export default function NavItem({ onClick }) {
   const navLinks = [
-    { text: "About", url: "about" },
-    { text: "Contribution", url: "contribution" },
-    { text: "Projects", url: "projects" },
-    { text: "Contact", url: "contact" },
+    { text: "ABOUT", url: "about" },
+    { text: "CONTRIBUTION", url: "contribution" },
+    { text: "PROJECTS", url: "projects" },
+    { text: "CONTACT", url: "contact" },
   ];
 
   const [navanimate, setLetterClass] = useState("navanimate");
@@ -24,15 +24,18 @@ export default function NavItem({ onClick }) {
       ${"setnav" + index}
       hover:scale-75 duration-500 cursor-pointer flex max-sm:flex-col justify-center items-center hover:text-Green`}
     >
-      <span className="text-Green">{`0${index + 1}.`}</span>
+    <div className="flex items-center gap-x-2 max-sm:flex-col">
+      <span className="text-Green font-black">{`0${index + 1}.`}</span>
       <Link
+        className="tracking-widest"
         spy={true}
         offset={-50}
         to={url}
-        onClick={onClick}
-      >
+        onClick={onClick}>
         {text}
       </Link>
+    </div>
+      
     </li>
   ));
 }
