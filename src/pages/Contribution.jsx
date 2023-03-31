@@ -22,9 +22,11 @@ export default function () {
     },
     {
       title: "POS",
-      link: "https://youtube.com",
-      content: ``,
-      content2: ``,
+      link: "https://github.com/alexiss455/java-net-beans",
+      content: `During my College I've been also contribute to our system, Point of sales 
+      i've been contribute as frontend using JAVA NetBeans and i also experience how Point of Sales system will flow.`,      
+       content2: `The tools are we use is Java Swing Framework Java Swing is a set of graphical user interface (GUI) components for Java applications.`,
+       content3: `And the Backend is MySQL use to manage and manipulate data in tables.` 
     },
   ];
 
@@ -50,7 +52,7 @@ export default function () {
                   activeTab === index
                     ? `text-Green  after:w-[2px]  after:h-full  after:bg-Green  after:absolute  after:left-0  after:bottom-0 max-sm:after:w-full max-sm:after:h-[2px]
                     `
-                    : `after:w-[2px] after:h-full after:bg-slate-400 after:absolute after:left-0 after:bottom-0 max-sm:after:w-ful max-sm:after:h-[2px]
+                    : `after:w-[2px] after:h-full after:bg-slate-400 after:absolute after:left-0 after:bottom-0 max-sm:after:w-full max-sm:after:h-[2px]
                     `
                 }`}
                 onClick={() => handleTabClick(index)}
