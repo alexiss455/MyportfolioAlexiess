@@ -35,9 +35,11 @@ export default function contact() {
           <h1 className="whitespace-nowrap textClamp flex flex-row text-Lightest-Slate gap-x-2 justify-center mb-1 font-bold items-center">
             <span className=" text-Green font-sans">04.</span>What’s Next?
           </h1>
-          <h1 className="text-center text-5xl font-bold mb-4 whitespace-nowrap max-md:text-4xl">
+          <h1 className="text-center text-5xl font-bold mb-0 whitespace-nowrap max-md:text-4xl">
             Get In Touch
           </h1>
+          <h1>Got a question or proposal, or just want
+to say hello? Go ahead.</h1>
           <input
             type="text"
             name="user_name"

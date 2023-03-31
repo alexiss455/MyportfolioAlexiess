@@ -94,7 +94,7 @@ function header() {
                     <ul className="font-sans Lightest-Slate text-md max-sm:text-lg flex gap-x-5 max-sm:flex-col justify-center items-center gap-y-10">
                       <Navitem onClick={closebar} />
                       <a
-                        href="/Alexiess_Manalastas_Resume-IT-1.pdf"
+                        href="/Alexiess_Manalastas_Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
