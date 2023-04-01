@@ -15,6 +15,7 @@ const projects = [
         One-Stop Shop for GPU Selection.`,
     techonology: ["EJS", "CSS", "NODEJS", "MONGODB", "EPRESS"],
     img: p1,
+
   },
 
   {
@@ -29,8 +30,9 @@ const projects = [
         coffee shop`,
     techonology: ["HTML", "CSS", "JAVASCRIPT"],
     img: p2,
+    className: "-order-first md:items-end",
+    className2: "-ml-20  max-md:ml-0 mr-0",
   },
-
   {
     link: "https://alexiss455.github.io/shushi-front-end-display",
     gitlink: "https://github.com/alexiss455/shushi-front-end-display",
@@ -41,8 +43,8 @@ const projects = [
         social media links. `,
     techonology: ["HTML", "CSS", "JAVASCRIPT"],
     img: p3,
+    
   },
-
   {
     link: "https://alexiess.vercel.app/",
     gitlink: "https://github.com/alexiss455/MyportfolioAlexiess",
@@ -54,7 +56,21 @@ const projects = [
         platforms.`,
     techonology: ["REACTJS", "CSS", "TAILWIND", "EMAILJS"],
     img: p4,
+    className: "-order-first md:items-end",
+    className2: "-ml-20  max-md:ml-0 mr-0",
   },
+  {
+    link: "https://space-frontend-challenge.vercel.app/",
+    gitlink: "https://github.com/alexiss455/space_frontend_challenge",
+    title: " Space tourism",
+    description: `  This website is a well-designed and functional web application
+    that incorporates popular web development technologies and a
+    visually appealing theme. By using React Router and Tailwind
+    CSS.`,
+    techonology: ["REACTJS", "CSS", "TAILWIND"],
+    img: p5,
+  },
+
 ];
 
 export default projects;
