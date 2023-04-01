@@ -15,7 +15,8 @@ const projects = [
         One-Stop Shop for GPU Selection.`,
     techonology: ["EJS", "CSS", "NODEJS", "MONGODB", "EPRESS"],
     img: p1,
-
+    className: "order-first",
+    className2: "-mr-20  max-md:mr-0",
   },
 
   {
@@ -31,8 +32,9 @@ const projects = [
     techonology: ["HTML", "CSS", "JAVASCRIPT"],
     img: p2,
     className: "-order-first md:items-end",
-    className2: "-ml-20  max-md:ml-0 mr-0",
+    className2: "-ml-20  max-md:ml-0",
   },
+
   {
     link: "https://alexiss455.github.io/shushi-front-end-display",
     gitlink: "https://github.com/alexiss455/shushi-front-end-display",
@@ -43,8 +45,10 @@ const projects = [
         social media links. `,
     techonology: ["HTML", "CSS", "JAVASCRIPT"],
     img: p3,
-    
+    className: "order-first",
+    className2: "-mr-20  max-md:mr-0",
   },
+
   {
     link: "https://alexiess.vercel.app/",
     gitlink: "https://github.com/alexiss455/MyportfolioAlexiess",
@@ -57,8 +61,9 @@ const projects = [
     techonology: ["REACTJS", "CSS", "TAILWIND", "EMAILJS"],
     img: p4,
     className: "-order-first md:items-end",
-    className2: "-ml-20  max-md:ml-0 mr-0",
+    className2: "-ml-20  max-md:ml-0",
   },
+  
   {
     link: "https://space-frontend-challenge.vercel.app/",
     gitlink: "https://github.com/alexiss455/space_frontend_challenge",
@@ -69,6 +74,8 @@ const projects = [
     CSS.`,
     techonology: ["REACTJS", "CSS", "TAILWIND"],
     img: p5,
+    className: "order-first",
+    className2: "-mr-20  max-md:mr-0",
   },
 
 ];

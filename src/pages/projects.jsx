@@ -13,7 +13,6 @@ export default function projects() {
         data-aos="fade-up"
       >
         {project.map((items, index) => (
-
           <div
             key={index}
             className="grid grid-cols-2 mt-8 max-md:grid-cols-1 relative"
@@ -35,7 +34,7 @@ export default function projects() {
             </div>
             <div
               data-aos="fade-right"
-              className={`${items.className} relative flex items-start flex-col justify-center order-first max-md:p-6 z-20`}
+              className={` ${items.className} relative flex flex-col justify-center max-md:p-6 z-20`}
             >
               <p className=" text-Green text-md">Featured Project</p>
               <a href={items.link} target="_blank" rel="noopener noreferrer">
@@ -44,8 +43,8 @@ export default function projects() {
                 </p>
               </a>
               <div
-                className={`${items.className2} max-md:bg-transparent rounded-md -mr-20 max-md:px-0
-           max-md:mr-0 bg-Light-Navy p-4 py-8 mt-4 text-left z-20 max-md:z-0 `}
+                className={`${items.className2} max-md:bg-transparent rounded-md max-md:px-0
+               bg-Light-Navy p-4 py-8 mt-4 text-left z-20 max-md:z-0 `}
               >
                 <p>{items.description}</p>
               </div>
