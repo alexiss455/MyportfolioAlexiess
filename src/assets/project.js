@@ -23,7 +23,7 @@ const projects = [
     link: "https://alexiss455.github.io/Coffee/",
     gitlink: "https://github.com/alexiss455/Coffee",
     title: "Coffee Website",
-    description: `  Responsive layout that adapts to different screen sizes.
+    description: `Responsive layout that adapts to different screen sizes.
         Navigation menu with links to different pages .Home page with a
         hero section and a list of featured products .Products page with
         a list of all products .About page with information about the
@@ -38,7 +38,7 @@ const projects = [
     link: "https://alexiss455.github.io/shushi-front-end-display",
     gitlink: "https://github.com/alexiss455/shushi-front-end-display",
     title: "Shushi Website",
-    description: `   The page is designed in a simple and elegant way, with a white
+    description: `The page is designed in a simple and elegant way, with a white
         background and minimalist layout. The top of the page features a
         header section with the restaurant's logo, navigation menu, and
         social media links. `,
@@ -65,7 +65,7 @@ const projects = [
     link: "https://space-frontend-challenge.vercel.app/",
     gitlink: "https://github.com/alexiss455/space_frontend_challenge",
     title: " Space tourism",
-    description: `  This website is a well-designed and functional web application
+    description: `This website is a well-designed and functional web application
     that incorporates popular web development technologies and a
     visually appealing theme. By using React Router and Tailwind
     CSS.`,
@@ -77,7 +77,7 @@ const projects = [
   {
     link: "https://e-commerce-practice-project.vercel.app/",
     gitlink: "https://github.com/alexiss455/e_commerce_practice_project",
-    title: "Ecommerce Landing Page",
+    title: "Ecommerce ",
     description: `This e-commerce landing page allows you to 
     add products to your cart using the 'Add' button, and view your current cart items.
      Additionally, you can remove items from your cart if desired. And this landing page already responsive for different sizes.`,
