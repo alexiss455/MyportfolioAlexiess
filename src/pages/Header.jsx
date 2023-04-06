@@ -5,6 +5,7 @@ import Navitem from "../components/navitem";
 import Main from "../Maincomponents/main";
 import Laoding from "../components/laoding";
 import Burger from "../components/burger";
+
 function header() {
   const [humbergerMenu, setHumberger] = useState(false);
   function headerClose() {
@@ -69,6 +70,20 @@ function header() {
     }, 3000);
   }, []);
 
+  const outSide = useRef(null);
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (outSide.current && !outSide.current.contains(event.target)) {
+        setHumberger(false);
+        document.body.classList.remove("no-scroll");
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       {loading ? (
@@ -85,7 +100,7 @@ function header() {
                 <div>
                   <Logo />
                 </div>
-                <div>
+                <div ref={outSide}>
                   <div
                     className={`max-sm:shadow-lg flex flex-row max-sm:fixed max-sm:bg-slate-800 max-sm:w-3/4 max-sm:min-h-screen
                   max-sm:justify-center duration-300 top-0 z-40
@@ -98,7 +113,11 @@ function header() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Btn className={`${navanimate} setnav4 flex justify-center items-center`}>Resume</Btn>
+                        <Btn
+                          className={`${navanimate} setnav4 flex justify-center items-center`}
+                        >
+                          Resume
+                        </Btn>
                       </a>
                     </ul>
                   </div>

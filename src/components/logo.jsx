@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { Link } from "react-scroll";
 export default function Logo() {
   const points = "100,10 190,50 190,150 100,190 10,150 10,50";
   const scale = 0.3;
@@ -24,7 +23,7 @@ export default function Logo() {
     polygon.style.fill = "#0a192f";
   }
   return (
-   <a href="#">
+   <a href="#" >
       <svg
         style={{ scale: "0" }}
         width="60"

@@ -4,6 +4,7 @@ import p3 from "../img/shushiwebsite.png";
 import p4 from "../img/myportfolio.png";
 import p5 from "../img/spaceweb.png";
 import p6 from "../img/ecomere_landing_page.png";
+
 const projects = [
   {
     link: "https://graphiscore.cyclic.app",
@@ -77,7 +78,7 @@ const projects = [
   {
     link: "https://e-commerce-practice-project.vercel.app/",
     gitlink: "https://github.com/alexiss455/e_commerce_practice_project",
-    title: "Ecommerce ",
+    title: "E-commerce ",
     description: `This e-commerce landing page allows you to 
     add products to your cart using the 'Add' button, and view your current cart items.
      Additionally, you can remove items from your cart if desired. And this landing page already responsive for different sizes.`,
@@ -86,8 +87,6 @@ const projects = [
     className: "-order-first md:items-end",
     className2: "-ml-20  max-md:ml-0",
   },
-
-
 ];
 
 export default projects;
