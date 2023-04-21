@@ -23,7 +23,7 @@
       <li>Vercel</li>
     </ul>
     <h2 style="font-size: 32px; margin-top: 48px;">🌐 View the Website</h2>
-    <p style="font-size: 24px;">You can view the live website at: <a href="https://rovic.vercel.app/" style="color: #0070f3; text-decoration: none;">https://alexiess.vercel.app/</a></p>
+    <p style="font-size: 24px;">You can view the live website at: <a href="https://alexiess.vercel.app/" style="color: #0070f3; text-decoration: none;">https://alexiess.vercel.app/</a></p>
    
   
   </body>
