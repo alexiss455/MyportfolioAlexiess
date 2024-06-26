@@ -7,36 +7,48 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #0d1e38c2;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888888b4;
   border-radius: 1rem;
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #484848;
 }
-#root{
+
+#root {
   overflow: hidden;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 header {
   /* background-color: #ffffff7e; */
   backdrop-filter: blur(50px);
 }
+
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
+
 .img_about {
   background-color: #303f52;
   border-radius: 0.5rem;
@@ -44,12 +56,14 @@ body {
   filter: saturate(2);
   transition: 15s;
 }
+
 .img_container {
   width: 80%;
   margin: auto;
   border-radius: 0.75rem;
   position: relative;
 }
+
 .img_container::before {
   content: "";
   border: 2px solid #64ffda;
@@ -61,15 +75,18 @@ body {
   left: 1.5rem;
   transition: 0.2s;
 }
+
 .img_container:hover::before {
   top: 1rem;
   left: 1rem;
 }
-.contribute{
+
+.contribute {
   position: relative;
   padding: 0 2rem;
 }
-.contribute::after{
+
+.contribute::after {
   content: "▹";
   position: absolute;
   left: 0;
@@ -77,12 +94,15 @@ body {
   font-size: x-large;
   color: #64ffda;
 }
+
 .no-scroll {
   overflow: hidden;
 }
-.blur{
+
+.blur {
   filter: blur(7px);
 }
+
 /* text */
 .textFont {
   position: relative;
@@ -94,6 +114,7 @@ body {
   align-items: center;
   overflow: hidden;
 }
+
 .textFont::before {
   content: "02.";
   margin-right: 0.5rem;
@@ -101,6 +122,7 @@ body {
   color: #64ffda;
   font-family: "Inconsolata";
 }
+
 .textFonts::before {
   content: "01.";
   margin-right: 0.5rem;
@@ -108,6 +130,7 @@ body {
   color: #64ffda;
   font-family: "Inconsolata";
 }
+
 .textFont::after {
   content: "";
   width: 300px;
@@ -116,21 +139,24 @@ body {
   background-color: rgb(50, 50, 50);
   margin-left: 10px;
 }
-.textProjects:before{
+
+.textProjects:before {
   content: "03.";
   margin-right: 0.5rem;
   font-size: 1.5rem;
   color: #64ffda;
   font-family: "Inconsolata";
 }
-.shdow{
+
+.shdow {
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.36);
--webkit-box-shadow: 0px 0px 7px 1px rgba(6, 17, 35, 0.36);
--moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(6, 17, 35, 0.36);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.36);
   background-color: #0d1f3b;
   border-radius: .25rem;
 }
-.anchor1::before{
+
+.anchor1::before {
   content: "";
   display: block;
   position: absolute;
@@ -140,7 +166,8 @@ body {
   left: 0px;
   z-index: 0;
 }
-.textClamp{
+
+.textClamp {
   font-size: clamp(1.5rem, 3.5vw, 1.55rem);
 }
 
@@ -148,41 +175,49 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #fff !important;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
 }
-.active{
+
+.active {
   color: #64ffda;
 }
 
-.webdev{
+.webdev {
   opacity: 0;
   animation-name: bounceIn;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 2.7s;
 }
-.navanimate{
+
+.navanimate {
   opacity: 0;
   animation-name: fadeInDown;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-.setnav0{
+
+.setnav0 {
   animation-delay: .0s;
 }
-.setnav1{
+
+.setnav1 {
   animation-delay: .3s;
 }
-.setnav2{
+
+.setnav2 {
   animation-delay: .6s;
 }
-.setnav3{
+
+.setnav3 {
   animation-delay: .9s;
 }
-.setnav4{
+
+.setnav4 {
   animation-delay: 1.2s;
 }
-.setnav5{
+
+.setnav5 {
   animation-delay: 2.9s;
 }
