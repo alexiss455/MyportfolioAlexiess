@@ -27,7 +27,7 @@ html{
   scroll-behavior: smooth;
 }
 header {
-  background-color: #0a192f7e;
+  /* background-color: #ffffff7e; */
   backdrop-filter: blur(50px);
 }
 body {
