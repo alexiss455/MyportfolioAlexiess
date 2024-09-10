@@ -33,7 +33,7 @@ html {
 }
 
 header {
-  /* background-color: #ffffff7e; */
+  background-color: #0a192fe;
   backdrop-filter: blur(50px);
 }
 
@@ -45,7 +45,7 @@ body {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #0a192f;
   font-family: "Poppins", sans-serif;
 }
 
